@@ -10,10 +10,12 @@ export default function Hero() {
           <br /> Based in <b>Indonesia.</b>
         </h1>
         <p>
-          I'm Ghifarialdhy Rahmansyah N Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took
-          a galley of type and scrambled it to specimen book.
+          Ghifarialdhy enjoys working with both front-end and back-end
+          technologies, combining creativity and technical skills to build
+          dynamic and user-friendly web applications. With a focus on continuous
+          learning and growth in the ever-evolving field of web development, he
+          aims to contribute to impactful digital solutions that enhance user
+          experiences and drive technological innovation.
         </p>
       </div>
       <div className="w-[50%] justify-items-end items-end">

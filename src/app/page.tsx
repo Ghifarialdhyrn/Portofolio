@@ -1,4 +1,6 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
+import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Project from "@/components/project";
@@ -7,7 +9,7 @@ import Skill from "@/components/skills";
 export default function Home() {
   return (
     <div>
-      <header className="w-full h-[80px] flex justify-center items-center sticky">
+      <header className="bg-black w-full h-[80px] flex justify-center items-center fixed">
         <Navbar />
       </header>
 
@@ -26,17 +28,31 @@ export default function Home() {
       </section>
 
       <section
-        id="about"
+        id="experience"
         className="bg-black w-full h-[692px] flex justify-center items-center"
+      >
+        <Experience />
+      </section>
+
+      <section
+        id="about"
+        className="w-full h-[692px] flex justify-center items-center"
       >
         <About />
       </section>
 
       <section
         id="project"
-        className="bg-black w-full h-[1800px] flex flex-col justify-center items-center"
+        className="bg-black w-full h-[1300px] flex flex-col justify-start items-center"
       >
         <Project />
+      </section>
+
+      <section
+        id="contact"
+        className="w-full h-[692px] flex justify-center items-center"
+      >
+        <Contact />
       </section>
     </div>
   );

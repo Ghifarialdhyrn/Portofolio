@@ -1,5 +1,3 @@
-import imgskill1 from "../assets/skills1.png";
-
 export default function Skill() {
   return (
     <div className="w-[80%] h-[545px] flex flex-col">
