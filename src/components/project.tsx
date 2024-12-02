@@ -21,14 +21,21 @@ export default function Project() {
           <h1 className="text-[40px] pb-5 font-bold">01</h1>
           <h2 className="text-[35px] pb-5 font-bold">Replicating Web Gojek</h2>
           <p className="text-justify mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint
-            temporibus animi! Est cumque repellendus laboriosam? Quia, vel!
-            Ipsam rem repellat illo aut nemo. Molestiae exercitationem voluptas
-            ex saepe hic accusantium recusandae eligendi quasi quos, ipsum magni
-            porro ab at velit nemo assumenda necessitatibus nulla eaque impedit
-            ratione dolore odit.
+            Pengembangan front-end replikasi website **Gojek** hingga bagian
+            "Skala Kami" dilakukan menggunakan React dan Tailwind CSS untuk
+            menciptakan antarmuka yang modern, responsif, dan menyerupai desain
+            asli. React digunakan untuk mengelola komponen-komponen antarmuka
+            secara modular, sehingga memudahkan pengembangan dan pemeliharaan
+            kode. Tailwind CSS dimanfaatkan untuk mendesain elemen visual secara
+            efisien dengan pendekatan utility-first yang fleksibel, memastikan
+            tata letak yang presisi dan estetika yang konsisten. Bagian "Skala
+            Kami" direplika dengan perhatian terhadap detail, termasuk
+            elemen-elemen seperti statistik, ikon, dan teks deskriptif, untuk
+            menghadirkan pengalaman visual yang mirip dengan website Gojek asli.
+            Kombinasi React dan Tailwind CSS memungkinkan hasil yang cepat,
+            responsif, dan optimal.
           </p>
-          <a href="">
+          <a href="https://replicating-gojek.vercel.app/">
             <img
               src={linkimg.src}
               alt=""
@@ -45,12 +52,19 @@ export default function Project() {
           <h1 className="text-[40px] pb-5 font-bold">02</h1>
           <h2 className="text-[35px] pb-5 font-bold">Todo List</h2>
           <p className="text-justify mb-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sint
-            temporibus animi! Est cumque repellendus laboriosam? Quia, vel!
-            Ipsam rem repellat illo aut nemo. Molestiae exercitationem voluptas
-            ex saepe hic accusantium recusandae eligendi quasi quos, ipsum magni
-            porro ab at velit nemo assumenda necessitatibus nulla eaque impedit
-            ratione dolore odit.
+            Pengembangan Front-End Website ToDo List menggunakan React dilakukan
+            dengan memanfaatkan kekuatan library ini dalam membangun antarmuka
+            yang interaktif dan dinamis. Aplikasi ini memungkinkan pengguna
+            untuk menambahkan daftar tugas melalui formulir input yang
+            disediakan, memberikan pengalaman yang sederhana dan intuitif.
+            Selain itu, fitur untuk menghapus daftar tugas memungkinkan pengguna
+            mengelola tugas yang tidak lagi relevan. Tugas yang sudah selesai
+            dapat ditandai dengan mudah, misalnya menggunakan checkbox, sehingga
+            mempermudah identifikasi tugas yang telah diselesaikan. Untuk
+            meningkatkan kegunaan, aplikasi ini juga menampilkan jumlah tugas
+            yang sudah selesai, memberikan pengguna wawasan tentang progres
+            mereka secara real-time. Dengan React, aplikasi ini menjadi cepat,
+            responsif, dan efisien dalam pengelolaan data.
           </p>
           <a href="https://todolist-web-sepia.vercel.app/">
             <img
