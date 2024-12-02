@@ -9,7 +9,7 @@ export default function Experience() {
       </h1>
       <div className="border-white border-2 w-[90%] h-[170px] mt-10 mb-5">
         <div className="flex flex-row ml-10 my-5">
-          <img src={imgexperience1.src} width={60} />
+          <img src={imgexperience1.src} alt="" width={60} />
           <h2 className="text-white ml-10 align-middle font-bold text-xl">
             Web Developer (Human Capital Services) at PT Len Industri
           </h2>
@@ -24,7 +24,7 @@ export default function Experience() {
       </div>
       <div className="border-white border-2 w-[90%] h-[170px] my-10">
         <div className="flex flex-row ml-10 my-5">
-          <img src={imgexperience2.src} width={40} />
+          <img src={imgexperience2.src} alt="" width={40} />
           <h2 className="text-white ml-16 mt-1 align-middle font-bold text-xl">
             Adding Feature for Website Berbanjar (Project Dosen) at Rekayasa
             Perangkat Lunak UPI
