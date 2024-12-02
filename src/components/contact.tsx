@@ -1,7 +1,7 @@
-import imgcontact1 from "@/assets/contact1.png";
-import imgcontact2 from "@/assets/contact2.png";
-import imgcontact3 from "@/assets/contact3.png";
-import imgcontact4 from "@/assets/contact4.png";
+import imgcontact1 from "../../public/contact1.png";
+import imgcontact2 from "../../public/contact2.png";
+import imgcontact3 from "../../public/contact3.png";
+import imgcontact4 from "../../public/contact4.png";
 
 export default function Contact() {
   return (

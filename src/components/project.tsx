@@ -1,6 +1,6 @@
-import imgproject1 from "@/assets/project.png";
-import imgproject2 from "@/assets/project2.png";
-import linkimg from "@/assets/link.png";
+import imgproject1 from "../../public/project.png";
+import imgproject2 from "../../public/project2.png";
+import linkimg from "../../public/link.png";
 
 export default function Project() {
   return (

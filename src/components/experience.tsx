@@ -1,5 +1,5 @@
-import imgexperience1 from "@/assets/experience1.png";
-import imgexperience2 from "@/assets/experience2.png";
+import imgexperience1 from "../../public/experience1.png";
+import imgexperience2 from "../../public/experience2.png";
 
 export default function Experience() {
   return (
