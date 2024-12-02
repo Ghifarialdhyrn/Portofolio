@@ -28,7 +28,7 @@ export default function Project() {
             porro ab at velit nemo assumenda necessitatibus nulla eaque impedit
             ratione dolore odit.
           </p>
-          <a href="#">
+          <a href="">
             <img
               src={linkimg.src}
               alt=""
