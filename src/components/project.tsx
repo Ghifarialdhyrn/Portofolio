@@ -66,7 +66,7 @@ export default function Project() {
             mereka secara real-time. Dengan React, aplikasi ini menjadi cepat,
             responsif, dan efisien dalam pengelolaan data.
           </p>
-          <a href="https://todolist-web-sepia.vercel.app/">
+          <a href="todolist-web-sooty.vercel.app">
             <img
               src={linkimg.src}
               alt=""
