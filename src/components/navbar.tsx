@@ -20,11 +20,16 @@ export default function Navbar() {
           <a href="#project">Project</a>
         </li>
         <li>
+          <a href="#testimonial">Testimonial</a>
+        </li>
+        <li>
           <a href="#contact">Contact Me</a>
         </li>
       </ul>
       <button className="bg-white text-black px-4 py-2 rounded-lg flex flex-row">
-        Resume
+        <a href="https://drive.google.com/file/d/1ScVqN58awOpC4SUPAXIqQr6MT5Xa3COf/view?usp=sharing">
+          Resume
+        </a>
       </button>
     </nav>
   );

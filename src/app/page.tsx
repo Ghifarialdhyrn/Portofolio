@@ -5,6 +5,7 @@ import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Project from "@/components/project";
 import Skill from "@/components/skills";
+import Testimoni from "@/components/testimoni";
 
 export default function Home() {
   return (
@@ -46,6 +47,13 @@ export default function Home() {
         className="bg-black w-full h-[1300px] flex flex-col justify-start items-center"
       >
         <Project />
+      </section>
+
+      <section
+        id="testimonial"
+        className="w-full h-[692px] flex justify-center items-center"
+      >
+        <Testimoni />
       </section>
 
       <section
