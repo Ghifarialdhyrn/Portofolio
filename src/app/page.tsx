@@ -30,21 +30,18 @@ export default function Home() {
 
       <section
         id="experience"
-        className="bg-black w-full h-[692px] flex justify-center items-center"
+        className="bg-black w-full flex justify-center items-center"
       >
         <Experience />
       </section>
 
-      <section
-        id="about"
-        className="w-full h-[692px] flex justify-center items-center"
-      >
+      <section id="about" className="w-full flex justify-center items-center">
         <About />
       </section>
 
       <section
         id="project"
-        className="bg-black w-full h-[1300px] flex flex-col justify-start items-center"
+        className="bg-black w-full xl:h-[1300px] sm:h-[2500px] flex flex-col justify-start items-center"
       >
         <Project />
       </section>

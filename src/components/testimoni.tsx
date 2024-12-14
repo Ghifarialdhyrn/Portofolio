@@ -57,51 +57,60 @@ export default function Testimoni() {
     }, 100);
   };
 
-  const visibleCards = testimonials.slice(currentIndex, currentIndex + 3);
-
-  if (visibleCards.length < 3) {
-    visibleCards.push(...testimonials.slice(0, 3 - visibleCards.length));
-  }
+  const visibleCards = [testimonials[currentIndex]];
 
   return (
-    <div className="w-[80%] h-[545px] flex flex-col justify-start items-center">
-      <h1 className="text-[40px] pb-10 text-center">
+    <div className="w-[90%] sm:w-[80%] h-auto flex flex-col justify-start items-center">
+      <h1 className="text-[30px] sm:text-[40px] pb-10 text-center">
         My <b>Testimonial</b>
       </h1>
-      <div className="w-full h-[100%] flex flex-row justify-center gap-10">
+      <div className="w-full h-auto flex flex-col sm:flex-row justify-center items-center gap-5 sm:gap-10 relative">
+        {/* Left Arrow Button */}
         <button
-          className="text-2xl bg-black text-white w-[50px] h-[50px] rounded-full mt-48"
+          className="text-2xl bg-black text-white w-[50px] h-[50px] rounded-full absolute left-[-30px] sm:left-[-80px] z-10"
           onClick={handlePrev}
         >
           &#8592;
         </button>
+
+        {/* Cards */}
         {visibleCards.map((card, index) => (
           <div
             key={index}
-            className={`w-[25%] m-5 rounded-xl shadow-2xl ${
+            className={`xl:w-[30%] sm:w-[70%] w-[90%] m-5 rounded-xl shadow-2xl ${
               animationDirection === "left"
                 ? "animate-slide-left"
                 : animationDirection === "right"
                 ? "animate-slide-right"
                 : ""
-            } ${index === 1 ? "bg-black text-white" : "bg-white"}`}
+            } ${index === 0 ? "bg-black text-white" : "bg-white"}`}
           >
-            <div className="w-full h-full flex flex-col justify-center items-center p-12 gap-5">
-              <img src={card.image} alt="" />
-              <h3 className="text-center">{card.text}</h3>
-              <hr className="text-center border-y-[1.5px] border-black w-1/2" />
+            <div className="xl:w-full xl:h-full flex flex-col justify-center items-center p-4 sm:p-12 gap-5">
+              <img
+                src={card.image}
+                alt=""
+                className="xl:w-[80px] sm:w-[120px] w-[100px] rounded-full"
+              />
+              <h3 className="text-center xl:text-sm sm:text-base text-xs sm:text-sm">
+                {card.text}
+              </h3>
+              <hr className="text-center border-y-[1.5px] border-black w-1/2 mx-auto" />
               <h2 className="font-bold text-xl">{card.name}</h2>
               <h4 className="text-[#71717A] font-bold">{card.role}</h4>
             </div>
           </div>
         ))}
+
+        {/* Right Arrow Button */}
         <button
-          className="text-2xl bg-black text-white w-[50px] h-[50px] rounded-full mt-48"
+          className="text-2xl bg-black text-white w-[50px] h-[50px] rounded-full absolute right-[-30px] sm:right-[-80px] z-10"
           onClick={handleNext}
         >
           &#8594;
         </button>
       </div>
+
+      {/* Indicator Dots */}
       <div className="flex gap-2 mt-5">
         {testimonials.map((_, index) => (
           <span

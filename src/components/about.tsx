@@ -2,47 +2,38 @@ import imgabout from "../../public/about-img.png";
 
 export default function About() {
   return (
-    <div className="w-[80%] h-[545px] flex flex-row justify-center items-center">
-      <div className="w-[50%] flex flex-col justify-center items-start">
+    <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-center items-center py-10 h-[1000px]">
+      {" "}
+      {/* Set height of the container */}
+      <div className="w-full md:w-1/2 flex justify-center mb-5 md:mb-0">
         <img
           src={imgabout.src}
-          alt=""
-          width={450}
-          className="border-black border-4 ml-10 rounded-xl"
+          alt="About Me"
+          className="border-black border-4 rounded-xl w-full xl:max-w-[500px] xl:h-[600px] sm:max-w-[200px] sm:h-[400px] object-cover"
         />
       </div>
-      <div className="w-[50%] text-left">
-        <h1 className="text-[35px] pb-10">
-          About <b>Me</b> <br />
+      <div className="w-full md:w-1/2 text-left">
+        <h1 className="text-[30px] md:text-[35px] pb-5">
+          About <b>Me</b>
         </h1>
         <p className="text-justify mb-2">
           Ghifarialdhy Rahmansyah Nitikusumah adalah seorang mahasiswa yang
           berasal dari Kota Bandung, Jawa Barat, dan kini menempuh pendidikan di
           Universitas Pendidikan Indonesia (UPI) dengan jurusan Rekayasa
           Perangkat Lunak. Selain fokus pada studinya, Ghifarialdhy memiliki
-          berbagai hobi seperti olahraga, travelling, dan gaming. Hobi-hobi
-          tersebut memberinya kesempatan untuk bersantai, mengeksplorasi dunia,
-          dan menikmati waktu luang dengan cara yang menyenangkan.
+          berbagai hobi seperti olahraga, travelling, dan gaming.
         </p>
         <p className="text-justify my-4">
           Sejak awal, minat Ghifarialdhy terhadap dunia coding muncul ketika ia
           diperkenalkan oleh kakak tertuanya. Pengalaman tersebut membuka pintu
           baginya untuk lebih mendalami dunia teknologi, dan akhirnya, ia
           memilih jurusan Rekayasa Perangkat Lunak sebagai langkah untuk
-          mengasah kemampuan di bidang tersebut. Khususnya, Ghifarialdhy sangat
-          tertarik dengan bidang Web Development, yang menjadi fokus utama dalam
-          perjalanan karirnya. Ia berharap dapat mengembangkan keterampilan
-          teknisnya dalam membuat dan mengelola aplikasi web, yang menjadi
-          tujuan karir jangka panjangnya.
+          mengasah kemampuan di bidang tersebut.
         </p>
         <p className="text-justify mt-2">
           Dengan berbagai hobi dan minat yang dimilikinya, Ghifarialdhy berharap
           dapat mengaplikasikan keterampilan dan pengalamannya untuk menjadi
-          seorang web developer profesional. Selain terus mengasah kemampuan
-          coding, ia juga berambisi untuk berkarir dalam industri teknologi,
-          khususnya di bidang pengembangan web. Semangatnya untuk terus belajar
-          dan berkembang di dunia pemrograman memberi harapan besar untuk masa
-          depan yang sukses di bidang ini.
+          seorang web developer profesional.
         </p>
       </div>
     </div>

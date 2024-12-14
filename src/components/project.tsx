@@ -8,16 +8,18 @@ export default function Project() {
       <h1 className="text-[40px] text-center text-white py-10 font-bold">
         My <b>Projects</b>
       </h1>
-      <div className="w-[80%] h-[545px] flex flex-row justify-center items-center text-white">
-        <div className="w-[50%] flex flex-col justify-center items-start">
+
+      {/* First Project */}
+      <div className="w-[80%] h-auto flex flex-col sm:flex-row justify-center items-center text-white mb-10">
+        <div className="w-full sm:w-[50%] flex justify-center mb-5 sm:mb-0">
           <img
             src={imgproject1.src}
-            alt=""
+            alt="Project 1"
             width={500}
             className="border-white border-2 rounded-3xl"
           />
         </div>
-        <div className="w-[50%] text-left">
+        <div className="w-full sm:w-[50%] text-left">
           <h1 className="text-[40px] pb-5 font-bold">01</h1>
           <h2 className="text-[35px] pb-5 font-bold">Replicating Web Gojek</h2>
           <p className="text-justify mb-2">
@@ -38,7 +40,7 @@ export default function Project() {
           <a href="https://replicating-gojek.vercel.app/">
             <img
               src={linkimg.src}
-              alt=""
+              alt="Project Link"
               width={20}
               height={20}
               className="pt-5"
@@ -47,8 +49,9 @@ export default function Project() {
         </div>
       </div>
 
-      <div className="w-[80%] h-[545px] flex flex-row justify-center items-center text-white">
-        <div className="w-[50%] text-letf">
+      {/* Second Project */}
+      <div className="w-[80%] h-auto flex flex-col sm:flex-row justify-center items-center text-white">
+        <div className="w-full sm:w-[50%] text-left">
           <h1 className="text-[40px] pb-5 font-bold">02</h1>
           <h2 className="text-[35px] pb-5 font-bold">Todo List</h2>
           <p className="text-justify mb-2">
@@ -69,19 +72,19 @@ export default function Project() {
           <a href="https://todolist-web-sooty.vercel.app/">
             <img
               src={linkimg.src}
-              alt=""
+              alt="Project Link"
               width={20}
               height={20}
               className="pt-5"
             />
           </a>
         </div>
-        <div className="w-[50%] flex flex-col justify-center items-end">
+        <div className="w-full sm:w-[50%] flex justify-center mt-5 sm:mt-0">
           <img
             src={imgproject2.src}
-            alt=""
+            alt="Project 2"
             width={500}
-            className="border-white border-2 rounded-3xl"
+            className="border-white border-2 rounded-3xl xl:mb-0 sm:mb-20"
           />
         </div>
       </div>
