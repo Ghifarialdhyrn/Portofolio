@@ -44,7 +44,7 @@ export default function Testimoni() {
         prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
       );
       setAnimationDirection(null);
-    }, 100);
+    }, 300); // Increase delay for smoother transition
   };
 
   const handleNext = () => {
@@ -54,7 +54,7 @@ export default function Testimoni() {
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
       setAnimationDirection(null);
-    }, 100);
+    }, 300); // Increase delay for smoother transition
   };
 
   const visibleCards = [testimonials[currentIndex]];
@@ -84,6 +84,9 @@ export default function Testimoni() {
                 ? "animate-slide-right"
                 : ""
             } ${index === 0 ? "bg-black text-white" : "bg-white"}`}
+            style={{
+              transition: "transform 0.5s ease-in-out",
+            }}
           >
             <div className="xl:w-full xl:h-full flex flex-col justify-center items-center p-4 sm:p-12 gap-5">
               <img

@@ -2,7 +2,6 @@ import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
 import Project from "@/components/project";
 import Skill from "@/components/skills";
 import Testimoni from "@/components/testimoni";
@@ -10,10 +9,6 @@ import Testimoni from "@/components/testimoni";
 export default function Home() {
   return (
     <div>
-      <header className="bg-black w-full h-[80px] flex justify-center items-center fixed">
-        <Navbar />
-      </header>
-
       <section
         id="hero"
         className=" w-full h-[692px] pt-[80px] flex justify-center items-center"
@@ -41,7 +36,7 @@ export default function Home() {
 
       <section
         id="project"
-        className="bg-black w-full xl:h-[1300px] sm:h-[2500px] flex flex-col justify-start items-center"
+        className="bg-black w-full xl:h-[auto] pb-20 sm:h-[auto] sm:mb-20 flex flex-col justify-start items-center gap-10"
       >
         <Project />
       </section>

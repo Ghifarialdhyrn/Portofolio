@@ -4,7 +4,7 @@ import imgexperience2 from "../../public/experience2.png";
 export default function Experience() {
   return (
     <div className="w-[90%] mx-auto flex flex-col justify-start items-center py-10 xl:h-[692px] sm:h-[1000px]">
-      <h1 className="text-[30px] md:text-[40px] text-center text-white font-bold mb-5">
+      <h1 className="text-[30px] md:text-[40px] text-center text-white font-bold mb-5 animate-fade-in">
         My <b>Experience</b>
       </h1>
       {[
@@ -24,10 +24,15 @@ export default function Experience() {
       ].map((exp, index) => (
         <div
           key={index}
-          className="border-white border-2 w-full md:w-[90%] h-auto my-5 p-5 rounded-lg"
+          className="border-white border-2 w-full md:w-[90%] h-auto my-5 p-5 rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:bg-white/10 animate-slide-in"
         >
           <div className="flex flex-row items-center mb-3">
-            <img src={exp.img} alt="" width={60} className="mr-3" />
+            <img
+              src={exp.img}
+              alt=""
+              width={60}
+              className="mr-3 rounded-full transition-transform duration-300 hover:scale-110"
+            />
             <h2 className="text-white font-bold text-xl">{exp.title}</h2>
           </div>
           <p className="text-white text-justify">{exp.description}</p>

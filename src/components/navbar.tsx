@@ -7,10 +7,15 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-[80%] text-white flex flex-row justify-between items-center place-self-center font-bold py-4">
+    <nav className="w-[100%] px-20 bg-black text-white flex flex-row justify-between items-center place-self-center font-bold py-4 transition duration-300 ease-in-out z-50 fixed top-0 left-1/2 transform -translate-x-1/2">
       {/* Logo */}
       <a href="#hero">
-        <img src={logo.src} alt="Logo" width={40} />
+        <img
+          src={logo.src}
+          alt="Logo"
+          width={40}
+          className="hover:scale-110 transform transition-transform duration-300"
+        />
       </a>
 
       {/* Hamburger Menu (Mobile) */}
@@ -38,42 +43,29 @@ export default function Navbar() {
       <ul
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } absolute top-[70px] left-0 bg-black w-full flex-col gap-4 px-6 py-4 md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto md:flex md:flex-row md:gap-10 md:items-center md:text-[17px]`}
+        } absolute top-[70px] left-0 bg-black w-full flex-col gap-4 px-6 py-4 md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto md:flex md:flex-row md:gap-10 md:items-center md:text-[17px] transition-all duration-300`}
       >
-        <li>
-          <a href="#about" className="hover:text-gray-300">
-            About Me
-          </a>
-        </li>
-        <li>
-          <a href="#skill" className="hover:text-gray-300">
-            Skill
-          </a>
-        </li>
-        <li>
-          <a href="#experience" className="hover:text-gray-300">
-            Experience
-          </a>
-        </li>
-        <li>
-          <a href="#project" className="hover:text-gray-300">
-            Project
-          </a>
-        </li>
-        <li>
-          <a href="#testimonial" className="hover:text-gray-300">
-            Testimonial
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="hover:text-gray-300">
-            Contact Me
-          </a>
-        </li>
+        {[
+          "About Me",
+          "Skill",
+          "Experience",
+          "Project",
+          "Testimonial",
+          "Contact Me",
+        ].map((item, index) => (
+          <li key={index}>
+            <a
+              href={`#${item.toLowerCase().replace(" ", "")}`}
+              className="hover:text-gray-300 transition-colors duration-300 ease-in-out"
+            >
+              {item}
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* Resume Button */}
-      <button className="hidden md:flex bg-white text-black px-4 py-2 rounded-lg">
+      <button className="hidden md:flex bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out">
         <a
           href="https://drive.google.com/file/d/1ScVqN58awOpC4SUPAXIqQr6MT5Xa3COf/view?usp=sharing"
           target="_blank"

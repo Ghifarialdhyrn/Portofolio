@@ -27,7 +27,7 @@ export default function Contact() {
             placeholder="Your Message"
             className="border-black border-2 w-full h-[140px] rounded-lg pl-5 mb-5"
           />
-          <button className="bg-black text-white w-full h-[56px] font-bold text-xl rounded-md">
+          <button className="bg-black text-white w-full h-[56px] font-bold text-xl rounded-md transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:text-white">
             Get In Touch
           </button>
         </form>
@@ -49,7 +49,7 @@ export default function Contact() {
                   src={img.src}
                   alt=""
                   width={35}
-                  className="bg-black text-white rounded-md p-2"
+                  className="bg-black text-white rounded-md p-2 transition-all duration-300 transform hover:scale-110 hover:rotate-12 hover:bg-gray-800"
                 />
               </a>
             )
@@ -60,7 +60,7 @@ export default function Contact() {
         <h1 className="font-bold text-[30px] md:text-[55px] text-black">
           Let's talk for <br /> Something special
         </h1>
-        <p className="text -gray-500 py-5">
+        <p className="text-gray-500 py-5">
           I seek to push the limits of creativity to create high-engaging,
           user-friendly, and memorable interactive experiences.
         </p>
